@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.2s;
+}
+
+.game-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin:  20px 0;
+}
+
+.choice {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.choice:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+    margin-top: 20px;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.result p#result-message {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.result p.win {
+    color: green;
+}
+
+.result p.lose {
+    color: red;
+}
+
+.result p.draw {
+    color: orange;
+}
